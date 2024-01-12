@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ddc8c8;
+    color: #333;
+    margin: 20px;
+  }
+
+.title {
+   
+    font-size: 50px;
+    margin-top: 4em;
+    margin-left: 2em;
+
+
+    
+}
+
+
+.cards {
+    position: relative;
+    border: 2px solid black;
+    width: 20vw;
+    height: 30vw;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Color de fondo al hacer hover */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cards:hover::before {
+    opacity: 1;
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+    filter: brightness(1); /* Cambiar el tono de la imagen (ajusta el valor según sea necesario) */
+    transition: filter 0.3s; /* Agrega una transición para suavizar el cambio */
+}
+
+.cards:hover .player {
+    filter: brightness(0.7); /* Restaura el tono original al hacer hover */
+
+    
+
+.textoplayer {
+    margin: 0.5em 3em;
+}
+
+#cards-container {
+    width:80vw;
+ 
+    margin-left: 7em;
+
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+}
